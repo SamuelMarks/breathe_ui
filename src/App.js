@@ -77,7 +77,7 @@ export default function App() {
                 bodyContent={
                   <Results
                     titleField="title"
-                    urlField="nps_link"
+                    urlField="link"
                     shouldTrackClickThrough={true}
                   />
                 }
