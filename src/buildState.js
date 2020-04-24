@@ -1,5 +1,3 @@
-import buildStateFacets from "./buildStateFacets";
-
 function buildTotalPages(resultsPerPage, totalResults) {
   if (!resultsPerPage) return 0;
   if (totalResults === 0) return 1;
@@ -54,7 +52,7 @@ function buildResults(hits) {
 
   For instance, Elasticsearch returns "hits" for search results. This maps to
   the "results" property in application state, which requires a specific format. So this
-  file iterates through "hits" and reformats them to "results" that Search UI
+  file iterates through "hits" and parses them into "results" that the Search UI
   understands.
 
   We do similar things for facets and totals.

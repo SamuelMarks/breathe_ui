@@ -78,7 +78,7 @@ export default function buildRequestFilter(filters) {
     if (["states", "world_heritage_site"].includes(filter.field)) {
       return [...acc, getTermFilter(filter)];
     }
-    if (["acres", "visitors"].includes(filter.field)) {
+    else if (["acres", "visitors"].includes(filter.field)) {
       return [...acc, getRangeFilter(filter)];
     }
     return acc;

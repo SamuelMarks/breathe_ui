@@ -56,7 +56,7 @@ export default function buildRequest(state) {
   const from = buildFrom(current, resultsPerPage);
   const filter = buildRequestFilter(filters);
 
-  const body = {
+  return /* body */ {
     // Static query Configuration
     // --------------------------
     // https://www.elastic.co/guide/en/elasticsearch/reference/7.x/search-request-highlighting.html
@@ -118,6 +118,4 @@ export default function buildRequest(state) {
     ...(size && { size }),
     ...(from && { from })
   };
-
-  return body;
 }

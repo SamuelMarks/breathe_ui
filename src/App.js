@@ -2,17 +2,15 @@ import React from "react";
 
 import {
   ErrorBoundary,
-  Facet,
-  SearchProvider,
-  WithSearch,
-  SearchBox,
-  Results,
-  PagingInfo,
-  ResultsPerPage,
   Paging,
-  Sorting
+  PagingInfo,
+  Results,
+  ResultsPerPage,
+  SearchBox,
+  SearchProvider,
+  WithSearch
 } from "@elastic/react-search-ui";
-import { Layout, SingleSelectFacet } from "@elastic/react-search-ui-views";
+import { Layout } from "@elastic/react-search-ui-views";
 import "@elastic/react-search-ui-views/lib/styles/styles.css";
 
 import buildRequest from "./buildRequest";
